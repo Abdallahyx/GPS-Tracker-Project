@@ -6,7 +6,7 @@
 #define PI 3.142857 
 
 
-char GPS_LOG[] = "$GPRMC,";
+char const GPS_LOG[] = "$GPRMC,";
 char GPS[80];
 char GPS_PROCESSED[12][20];
 char * token;
@@ -34,7 +34,7 @@ void GPSread(){
     do{
         while(UART_GETinput() != GPS_LOG[count])
             count++;
-    }while(count != 6);
+    }while(count != 7);
     
     strcpy(GPS, "");
     UART_char = UART_GETinput();
@@ -67,7 +67,7 @@ void GPSread(){
         else{   
             lng = -atof(GPS_PROCESSED[4]);
         }
-
+        
     }
 
 }
