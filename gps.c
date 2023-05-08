@@ -32,8 +32,7 @@ void GPSread(){
     int i = 0;
 
     do{
-        UART_char = UART_GETinput();
-        while(UART_char != GPS_LOG[count])
+        while(UART_GETinput() != GPS_LOG[count])
             count++;
     }while(count != 6);
     
