@@ -82,35 +82,3 @@ double distance(){
     return distance;
 }
 
-
-void toString(char str[], int num){
-    int i, rem, len = 0, n;
-    n = num;
-    while (n != 0)
-    {
-        len++;
-        n /= 10;
-    }
-    for (i = 0; i < len; i++)
-    {
-        rem = num % 10;
-        num = num / 10;
-        str[len - (i + 1)] = rem + '0';
-    }
-    str[len] = '\0';
-}
-
-
-void DoubleToString(float x, char c[]){
-    int y = (int)x;
-    x=x-y;
-    char tmp[12];
-    tostring(tmp, y);
-    y=(int)(x*100000);
-    char tmp1[5];
-    tostring(tmp1,y);
-    strcat(tmp,".");
-    strcat(tmp,tmp1);
-    strcpy(c,tmp);
-
-}
