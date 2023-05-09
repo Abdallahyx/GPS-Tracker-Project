@@ -1,0 +1,72 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+D:\ASU\Spring 2023\Embedded\FProject\FProject.uvproj
+Project File Date:  05/09/2023
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling startup_TM4C123.s...
+compiling GPIO.c...
+GPIO.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+Utilities.h(1): warning:  #14-D: extra text after expected end of preprocessing directive
+  #ifndef Utilities.h
+Utilities.h(2): warning:  #2775-D: white space is required between the macro name "Utilities" and its replacement text
+  #define Utilities.h
+Utilities.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+GPIO.c: 4 warnings, 0 errors
+compiling gps.c...
+gps.h(15): warning:  #1295-D: Deprecated declaration GPSread - give arg types
+  void GPSread();
+gps.h(16): warning:  #1295-D: Deprecated declaration distance - give arg types
+  double distance();
+gps.h(18): warning:  #1-D: last line of file ends without a newline
+  #endif
+gps.c(33): warning:  #223-D: function "UART_Read" declared implicitly
+          while(UART_Read() != GPS_LOG[count])
+gps.c(38): warning:  #223-D: function "UART_Read" declared implicitly
+      UART_char = UART_Read();
+gps.c: 5 warnings, 0 errors
+compiling LCD.c...
+LCD.h(37): warning:  #1-D: last line of file ends without a newline
+  #endif
+Utilities.h(1): warning:  #14-D: extra text after expected end of preprocessing directive
+  #ifndef Utilities.h
+Utilities.h(2): warning:  #2775-D: white space is required between the macro name "Utilities" and its replacement text
+  #define Utilities.h
+Utilities.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+LCD.c: 4 warnings, 0 errors
+compiling UART.c...
+UART.h(7): warning:  #1295-D: Deprecated declaration intUARTE - give arg types
+  void intUARTE();
+UART.h(9): warning:  #1295-D: Deprecated declaration UARTR_Ready - give arg types
+   bool UARTR_Ready();
+UART.h(11): warning:  #1295-D: Deprecated declaration UART_Read - give arg types
+   char UART_Read();
+UART.h(13): warning:  #1295-D: Deprecated declaration UARTT_Ready - give arg types
+   bool UARTT_Ready();
+UART.h(17): warning:  #1-D: last line of file ends without a newline
+   #endif
+Utilities.h(1): warning:  #14-D: extra text after expected end of preprocessing directive
+  #ifndef Utilities.h
+Utilities.h(2): warning:  #2775-D: white space is required between the macro name "Utilities" and its replacement text
+  #define Utilities.h
+Utilities.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+UART.c(47): warning:  #1-D: last line of file ends without a newline
+   
+UART.c: 9 warnings, 0 errors
+linking...
+.\FProject.axf: Error: L6218E: Undefined symbol main (referred from rtentry2.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+".\FProject.axf" - 1 Error(s), 22 Warning(s).
+Target not created
+</pre>
+</body>
+</html>
